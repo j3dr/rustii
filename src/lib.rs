@@ -7,7 +7,7 @@ use std::time::Duration;
 use std::str;
 
 use clap::{Parser, Subcommand};
-use image::{imageops::FilterType, io::Reader as ImageReader, DynamicImage, GenericImageView, Pixel};
+use image::{imageops::FilterType, ImageReader, DynamicImage, GenericImageView, Pixel};
 use miniz_oxide::deflate::compress_to_vec;
 use miniz_oxide::inflate::decompress_to_vec;
 use indicatif::{ProgressBar, ProgressStyle};
